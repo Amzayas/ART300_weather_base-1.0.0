@@ -21,20 +21,32 @@
         <script src="/js/libraries/leaflet/Permalink.Overlay.js"></script>
         <script src="/js/libraries/leaflet/leaflet-openweathermap.js"></script>
         <script src="/js/libraries/leaflet/leaflet-languageselector.js"></script>
-
+        <link rel="stylesheet" href="https://use.typekit.net/fqu0qbr.css">
         <link rel="stylesheet" href="/style.css">
     </head>
 
     <body>
 
+        <div class="topmenu">
+            <div class="locationbyzip">
+                    <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
+                    <p id="zip_display"></p>
+            </div>
+            <div class="logo">
+                <img src="/images/globelogo.jpg" alt="Blue Globe Icon">
+            </div>
+            <div class="webnamebox">
+                weather.amz.com
+            </div>
+        </div>
 
 
-        <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
-        <p id="zip_display"></p>
+
+
 
 
         <div class="results" id="app">
-            <h1>TIME</h1>
+            <!-- <h1>TIME</h1>
             <p>{{time.day}}</p>
             <p>{{time.date}}</p>
             <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>
@@ -102,7 +114,7 @@
             <p>{{forecast[0].snow}}</p>
 
             <p>{{forecast[0].dewpt}}</p>
-            <p>{{forecast[0].pres}} mb</p>
+            <p>{{forecast[0].pres}} mb</p> -->
 
         </div>
         <div id="map"></div>
