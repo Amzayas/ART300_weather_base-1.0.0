@@ -26,26 +26,60 @@
     </head>
 
     <body>
-
-        <div class="topmenu">
-            <div class="locationbyzip">
-                    <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
-                    <p id="zip_display"></p>
-            </div>
-            <div class="logo">
-                <img src="/images/globelogo.jpg" alt="Blue Globe Icon">
-            </div>
-            <div class="webnamebox">
-                weather.amz.com
-            </div>
-        </div>
-
-
-
-
-
-
         <div class="results" id="app">
+
+
+            <div class="topmenu">
+                <div class="locationbyzip">
+                    <input placeholder="Enter Your ZIP Code" v-on:input="zip_trigger" name="name" id="zip" />
+                    <p id="zip_display"></p>
+                </div>
+                <div class="logo">
+                    <img src="/images/globelogo.jpg" alt="Blue Globe Icon">
+                </div>
+                <div class="webnamebox">
+                    weather.amz.com
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="maininfo">
+                    <div class="left">
+                        <div class="yourlocationbox">
+                            <p>Your Location</p>
+                            <div class="yourlocation">
+                                <p>{{city}}</p>
+                            </div>
+                        </div>
+                        <div class="time">                          
+                            <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="temp">
+                            <p>Temperature (F/C)</p>
+                        </div>
+                        <div class="currenttemp">
+                            <p>{{current.temp.current}}°</p>
+                        </div>
+                        <div class="feelslikebox">
+                            <p>Feels Like 78°F</p>
+                        </div>
+                        <div class="currenticon"></div>
+                    </div>
+                </div>
+                <div class="alertbar">
+                    <p>No hazardous weather conditions at the moment.</p>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
             <!-- <h1>TIME</h1>
             <p>{{time.day}}</p>
             <p>{{time.date}}</p>

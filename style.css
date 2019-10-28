@@ -6,13 +6,14 @@ body{
 
 .topmenu{
     width: 100vw;
-    position: fixed;
+    position: relative;
     margin: auto;
     display: grid;
     grid-template-columns: 1.25fr .5fr 1.25fr;
     grid-column-gap: 1em;
     background-color: rgb(112, 112, 112);
     height: 70px;
+    z-index: 1;
 }
 
 .locationbyzip{
@@ -49,6 +50,103 @@ img{
     color: rgb(254, 215, 102);
 }
 
+.maininfo{
+    display: grid;
+    width: 90vw;
+    margin: auto;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+}
+
+.left{
+    display: grid;
+    position: relative;
+    grid-template-rows: 100px 100px;
+    grid-row-gap: 1em;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.yourlocationbox{
+    width: 30vw;
+    height: 100px;
+    background-color: rgb(0, 159, 183);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.yourlocation{
+    width: 27vw;
+    height: 40px;
+    background-color: white;
+    margin: auto;
+    margin-top: -8px;
+    z-index: 1;
+}
+
+.time{
+    margin: auto;
+    margin-top: -20px;
+    padding-top: 10px;
+    height: 30px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(112, 112, 112);
+}
+
+.right{
+    margin: auto;
+    margin-top: 0;
+    position: relative;
+}
+
+.temp{
+    text-align: center;
+    margin-top: 35px;
+    color: rgb(112, 112, 112);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.currenttemp{
+    text-align: center;
+    font-size: 14em;
+    margin-top: -250px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 159, 183);
+}
+
+.feelslikebox{
+    display: block;
+    background-color: rgb(254, 215, 102);
+    height: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(112, 112, 112);
+    margin: auto;
+    margin-top: -250px;
+}
+
+.currenticon{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.alertbar{
+    display: block;
+    width: 90vw;
+    height: 30px;
+    margin: auto;
+    position: relative;
+    background-color: rgb(254, 215, 102);
+    color: rgb(112, 112, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
 .degree_symbol:not(:empty)::after {
     content: "°"
@@ -62,3 +160,4 @@ img{
 	width: 600px;
     height: 600px;
 }
+
