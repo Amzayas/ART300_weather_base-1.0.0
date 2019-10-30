@@ -38,7 +38,7 @@
                     <img src="/images/globelogo.jpg" alt="Blue Globe Icon">
                 </div>
                 <div class="webnamebox">
-                    weather.amz.com
+                    <p>weather.amz.com</p>
                 </div>
             </div>
 
@@ -63,7 +63,7 @@
                             <p>{{current.temp.current}}°</p>
                         </div>
                         <div class="feelslikebox">
-                            <p>Feels Like 78°F</p>
+                            <p>Feels Like ()</p>
                         </div>
                         <div class="currenticon"></div>
                     </div>
@@ -71,6 +71,228 @@
                 <div class="alertbar">
                     <p>No hazardous weather conditions at the moment.</p>
                 </div>
+                <div class="weeklyforecast">
+                    <div class="weeklyforecastgrid">
+                        <div class="dailybox">
+                            <div class="day">
+                                <p>Today</p>
+                            </div>
+                            <div class="hilowgrid">
+                                <div class="hilow">
+                                    <p>{{forecast[0].max_temp}}°/ {{forecast[0].min_temp}}°</p>
+                                </div>
+                                <div class="weathericon"></div>
+                            </div>
+                            <div class="daychanceprecip">
+                                <p>Chance Precipitation: {{forecast[0].precip}}</p>
+                            </div>
+                        </div>
+                        <div class="dailybox">
+                            <div class="day">
+                                <p>Thursday</p>
+                            </div>
+                            <div class="hilowgrid">
+                                <div class="hilow">
+                                    <p>{{forecast[1].max_temp}}°/ {{forecast[1].min_temp}}°</p>
+                                </div>
+                                <div class="weathericon"></div>
+                            </div>
+                            <div class="daychanceprecip">
+                                <p>Chance Precipitation: {{forecast[1].precip}}</p>
+                            </div>
+                        </div>
+                        <div class="dailybox">
+                            <div class="day">
+                                <p>Friday</p>
+                            </div>
+                            <div class="hilowgrid">
+                                <div class="hilow">
+                                    <p>{{forecast[2].max_temp}}°/ {{forecast[2].min_temp}}°</p>
+                                </div>
+                                <div class="weathericon"></div>
+                            </div>
+                            <div class="daychanceprecip">
+                                <p>Chance Precipitation: {{forecast[2].precip}}</p>
+                            </div>
+                        </div>
+                        <div class="dailybox">
+                            <div class="day">
+                                <p>Saturday</p>
+                            </div>
+                            <div class="hilowgrid">
+                                <div class="hilow">
+                                    <p>{{forecast[3].max_temp}}°/ {{forecast[3].min_temp}}°</p>
+                                </div>
+                                <div class="weathericon"></div>
+                            </div>
+                            <div class="daychanceprecip">
+                                <p>Chance Precipitation: {{forecast[3].precip}}</p>
+                            </div>
+                        </div>
+                        <div class="dailybox">
+                            <div class="day">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="hilowgrid">
+                                <div class="hilow">
+                                    <p>{{forecast[4].max_temp}}°/ {{forecast[4].min_temp}}°</p>
+                                </div>
+                                <div class="weathericon"></div>
+                            </div>
+                            <div class="daychanceprecip">
+                                <p>Chance Precipitation: {{forecast[4].precip}}</p>
+                            </div>
+                        </div>
+                        <div class="dailybox">
+                            <div class="day">
+                                <p>Monday</p>
+                            </div>
+                            <div class="hilowgrid">
+                                <div class="hilow">
+                                    <p>{{forecast[5].max_temp}}°/ {{forecast[5].min_temp}}°</p>
+                                </div>
+                                <div class="weathericon"></div>
+                            </div>
+                            <div class="daychanceprecip">
+                                <p>Chance Precipitation: {{forecast[5].precip}}</p>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="sungrid">
+                    <div class="sunrise">
+                        <div class="sunrisetext">
+                            <p>Sunrise</p>
+                        </div>
+                        <div class="sunrisetime">
+                            <p>{{current.sunrise}}</p>
+                        </div>
+                    </div>
+                    <div class="sunset">
+                        <div class="sunsettext">
+                            <p>Sunset</p>
+                        </div>
+                        <div class="sunsettime">
+                            <p>{{current.sunset}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="otherinfoboxes">
+                    <div class="infobox">
+                        <div class="chanceprecip">
+                            <div class="chancepreciptext">
+                                <p>Chance of Precipitation</p>
+                            </div>
+                            <div class="chanceofprecipnumber">
+                                <p>{{forecast[0].precip}}</p>
+                            </div>
+                        </div>
+                        <div class="accumulation">
+                            <div class="accumulationtext">
+                                <p>Accumulation</p>
+                            </div>
+                            <div class="accumulationnumber">
+                                <p>0.5in</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Humidity</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Air Quality</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>Good</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>UV Index</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>{{forecast[0].dewpt}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Dewpoint</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>{{forecast[0].uv}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Wind Direction/Speed</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>{{forecast[0].wind_cdir}} {{forecast[0].wind_spd}} MPH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Windchill</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>{{current.wind.degree}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Visibility</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>{{forecast[0].vis}} mi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Air Pressure</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>{{forecast[0].pres}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobox">
+                        <div class="infotopic">
+                            <div class="infotopictext">
+                                <p>Phase of the Moon</p>
+                            </div>
+                            <div class="infotopicnumber">
+                                <p>{{time.moom}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rmtitle">
+                    <p>Radar/Map</p>
+                </div>
+                <div id="map"></div>
+                <div class="bottombar"></div>
+
 
             </div>
 
@@ -151,7 +373,7 @@
             <p>{{forecast[0].pres}} mb</p> -->
 
         </div>
-        <div id="map"></div>
+
 
 
 
