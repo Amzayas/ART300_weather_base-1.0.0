@@ -143,8 +143,8 @@ img{
 }
 
 .currenticon{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin: auto;
     margin-top: 20px;
 }
@@ -229,10 +229,9 @@ img{
 }
 
 .weathericon{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     margin: auto;
-    background-color: red;
 }
 
 .daychanceprecip{
@@ -371,7 +370,7 @@ img{
     margin: auto;
 }
 
-.icon11d{
+.icon-11d{
     background-image: url(/images/11d.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -411,54 +410,54 @@ img{
     background-image: url(/images/03d.png);
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-04d{
     background-image: url(/images/04d.png);
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-09d{
     background-image: url(/images/09d.png);
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-10d{
     background-image: url(/images/10d.png);
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-11d{
     background-image: url(/images/11d.png);
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-13d{
     background-image: url(/images/13d.png);
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .icon-50d{
     background-image: url(/images/50d.png);
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
