@@ -145,7 +145,6 @@ img{
 .currenticon{
     height: 50px;
     width: 50px;
-    background-color: red;
     margin: auto;
     margin-top: 20px;
 }
@@ -179,7 +178,7 @@ img{
 
 .weeklyforecastgrid{
     width: 2200px;
-    height: 250px;
+    height: 220px;
     display: grid;
     margin-left: 20px;
     position: relative;
@@ -372,6 +371,15 @@ img{
     margin: auto;
 }
 
+.icon11d{
+    background-image: url(/images/11d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin-top: -30px;
+}
+
 .bottombar{
     width: 100vw;
     height: 70px;
@@ -381,4 +389,76 @@ img{
     margin-top: 120px;
     margin-bottom: -155px;
     background-color: rgb(112, 112, 112);
+}
+
+.icon-01d{
+    background-image: url(/images/01d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-02d{
+    background-image: url(images/02d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-03d{
+    background-image: url(/images/03d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-04d{
+    background-image: url(/images/04d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-09d{
+    background-image: url(/images/09d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-10d{
+    background-image: url(/images/10d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-11d{
+    background-image: url(/images/11d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-13d{
+    background-image: url(/images/13d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-50d{
+    background-image: url(/images/50d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
 }

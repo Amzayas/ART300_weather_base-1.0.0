@@ -65,11 +65,13 @@
                         <div class="feelslikebox">
                             <p>Chance of Precipitation: {{forecast[0].precip}}</p>
                         </div>
-                        <div class="currenticon"></div>
+                        <div class="currenticon">
+                            <div v-bind:class="'icon-'+{{current.description_icon}}"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="alertbar">
-                    <p>No hazardous weather conditions at the moment.</p>
+                    <p>{{error}}</p>
                 </div>
                 <div class="weeklyforecast">
                     <div class="weeklyforecastgrid">
@@ -281,9 +283,17 @@
                 </div>
                 <div id="map"></div>
                 <div class="bottombar"></div>
-
-
             </div>
+
+            <div class="icon-01d"></div>
+            <div class="icon-02d"></div>
+            <div class="icon-03d"></div>
+            <div class="icon-04d"></div>
+            <div class="icon-09d"></div>
+            <div class="icon-10d"></div>
+            <div class="icon-11d"></div>
+            <div class="icon-13d"></div>
+            <div class="icon-50d"></div>
 
 
 
