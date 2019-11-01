@@ -461,3 +461,449 @@ img{
     height: 100%;
     width: 100%;
 }
+
+/* --- SMART PHONE --- */
+
+@media only screen and (max-width: 800px){
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(239, 241, 243);
+    }
+    
+    .topmenu{
+        width: 100vw;
+        position: relative;
+        margin: auto;
+        padding-top: 10px;
+        display: block;
+        background-color: rgb(112, 112, 112);
+        height: 60px;
+        z-index: 1;
+    }
+    
+    .locationbyzip{
+        height: 50px;
+        background-color: white;
+        margin-left: 10px;
+        margin-top: 0px;
+        width: 175px;
+        z-index: 2;
+    }
+    
+    #zip{
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    
+    img{
+        max-width: 100vw;
+        height: 50px;
+        margin-top: -50px;
+        margin-left: 200px;
+        display: block;
+        mix-blend-mode: multiply;
+    }
+    
+    .webnamebox{
+        display: none;
+    }
+
+    .maininfo{
+        display: block;
+    }
+    
+    .left{
+        display: grid;
+        position: relative;
+        grid-template-rows: 100px 100px;
+        grid-row-gap: 1em;
+        margin: auto;
+        margin-top: 5px;
+    }
+    
+    .yourlocationbox{
+        width: 60vw;
+        height: 100px;
+        margin: auto;
+        background-color: rgb(0, 159, 183);
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .yourlocation{
+        width: 50vw;
+        height: 35px;
+        background-color: white;
+        margin: auto;
+        margin-top: -10px;
+        z-index: 1;
+        font-size: 1.25em;
+        color: rgb(112, 112, 112);
+    }
+
+    .yourlocation p{
+        padding: 7px;
+    }
+    
+    .time{
+        margin: auto;
+        margin-top: -45px;
+        padding-top: 10px;
+        height: 30px;
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(112, 112, 112);
+        text-align: center;
+    }
+    
+    .right{
+        margin: auto;
+        margin-top: 0;
+        position: relative;
+    }
+    
+    .temp{
+        text-align: center;
+        margin-top: -10px;
+        color: rgb(112, 112, 112);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .currenttemp{
+        text-align: center;
+        font-size: 10em;
+        margin-top: -175px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 159, 183);
+    }
+    
+    .feelslikebox{
+        display: block;
+        background-color: rgb(254, 215, 102);
+        height: 30px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(112, 112, 112);
+        margin: auto;
+        margin-top: -175px;
+    }
+    
+    .feelslikebox p{
+        padding-top: 7px;
+    }
+    
+    .currenticon{
+        height: 60px;
+        width: 60px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .alertbar{
+        display: block;
+        width: 90vw;
+        height: 30px;
+        margin: auto;
+        position: relative;
+        background-color: rgb(254, 215, 102);
+        color: rgb(112, 112, 112);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .alertbar p{
+        padding-top: 7px;
+    }
+    
+    .weeklyforecast{
+        width: 90vw;
+        height: 250px;
+        display: block;
+        overflow: scroll;
+        margin: auto;
+        margin-top: 15px;
+        position: relative;
+        background-color: rgb(0, 159, 183);
+    }
+    
+    .weeklyforecastgrid{
+        width: 2200px;
+        height: 220px;
+        display: grid;
+        margin-left: 20px;
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+    
+    .dailybox{
+        height: 220px;
+        position: relative;
+        background-color: white;
+    }
+    
+    .day{
+        height: 50px;
+        width: 300px;
+        margin: auto;
+        margin-top: -15px;
+        background-color: rgb(239, 241, 243);
+        text-align: center;
+        font-size: 2.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(112, 112, 112);
+    }
+    
+    .hilowgrid{
+        width: 300px;
+        margin: auto;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1.5fr .5fr;
+        grid-column-gap: .5em;
+        position: relative;
+    }
+    
+    .hilow{
+        height: 100px;
+        font-size: 2.6em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(112, 112, 112);
+    }
+    
+    .hilow p{
+        margin-top: 25px;
+    }
+    
+    .weathericon{
+        height: 70px;
+        width: 70px;
+        margin: auto;
+    }
+    
+    .daychanceprecip{
+        height: 20px;
+        width: 250px;
+        margin: auto;
+        margin-top: -20px;
+        color: rgb(112, 112, 112);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .sungrid{
+        width: 40vw;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+    }
+    
+    .sunrise{
+    }
+    
+    .sunrisetext{
+        height: 30px;
+        position: relative;
+        color: rgb(112, 112, 112);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .sunrisetime{
+        height: 60px;
+        margin-top: -50px;
+        position: relative;
+        color: rgb(0, 159, 183);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    .sunset{
+    }
+    
+    .sunsettext{
+        height: 30px;
+        position: relative;
+        color: rgb(112, 112, 112);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .sunsettime{
+        height: 60px;
+        margin-top: -50px;
+        position: relative;
+        color: rgb(0, 159, 183);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    .otherinfoboxes{
+        width: 70vw;
+        margin: auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px;
+        grid-template-rows: 1em;
+    }
+    
+    .infobox{
+        background-color: white;
+        margin-top: 30px;
+    }
+    
+    .infotopictext{
+        margin: auto;
+        position: relative;
+        color: rgb(112, 112, 112);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .infotopicnumber{
+        margin: auto;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        position: relative;
+        color: rgb(0, 159, 183);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .infotopicnumber p{
+    
+    }
+    
+    
+    
+    .rmtitle{
+        width: 100vw;
+        display: block;
+        position: relative;
+        color: rgb(0, 159, 183);
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .degree_symbol:not(:empty)::after {
+        content: "°"
+    }
+    
+    .owm-legend-item{
+        display: none;
+    }
+    
+    #map {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    
+    .icon-11d{
+        background-image: url(/images/11d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100px;
+        height: 100px;
+        margin-top: -30px;
+    }
+    
+    .bottombar{
+        width: 100vw;
+        height: 70px;
+        display: block;
+        position: relative;
+        margin: auto;
+        margin-top: 120px;
+        margin-bottom: -155px;
+        background-color: rgb(112, 112, 112);
+    }
+    
+    .icon-01d{
+        background-image: url(/images/01d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-02d{
+        background-image: url(images/02d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-03d{
+        background-image: url(/images/03d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-04d{
+        background-image: url(/images/04d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-09d{
+        background-image: url(/images/09d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-10d{
+        background-image: url(/images/10d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-11d{
+        background-image: url(/images/11d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-13d{
+        background-image: url(/images/13d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-50d{
+        background-image: url(/images/50d.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+
+}
